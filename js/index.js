@@ -11,12 +11,17 @@ mobileBtn.addEventListener("click", (e) => {
   const navfunc = () => {
     if (imageName === "hamburger.svg" || imageName === "black-hamburger.svg") {
       previusImage = imageName;
-      mobileBtn.src = "/images/x.svg";
+
+      pageName === "index.html"
+        ? (mobileBtn.src = "./images/x.svg")
+        : (mobileBtn.src = "../images/x.svg");
     } else {
-      mobileBtn.src = `/images/${previusImage}`;
+      pageName === "index.html"
+        ? (mobileBtn.src = `./images/${previusImage}`)
+        : (mobileBtn.src = `../images/${previusImage}`);
     }
 
-    // Class toggle
+    //Class toggle
     mobileNav.classList.toggle("nav-open");
     if (pageName === "index.html") {
       logo.classList.toggle("black-logo");

@@ -287,13 +287,8 @@ main {
   .contact-bg {
     padding: 57px 56px;
 
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.93) 107.96%
-      ),
-      linear-gradient(360deg, rgba(0, 0, 0, 0) 89.75%, rgba(0, 0, 0, 0.7) 100%),
-      url("/images/ContactForm.png");
+    background: linear-gradient(#0000006b, #0000006b),
+      url("../images/ContactForm.png");
     background-position: center;
     background-size: cover;
     border-radius: 36px;

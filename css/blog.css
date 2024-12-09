@@ -172,13 +172,8 @@
 
   .sbuscribe-bg {
     padding: 80px 51px;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.93) 107.96%
-      ),
-      linear-gradient(360deg, rgba(0, 0, 0, 0) 89.75%, rgba(0, 0, 0, 0.7) 100%),
-      url("/images/ContactForm.png");
+    background: linear-gradient(#00000080, #00000080),
+      url("..../images/ContactForm.png");
     background-position: center;
     background-size: cover;
     border-radius: 36px;
