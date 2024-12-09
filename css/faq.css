@@ -1,0 +1,233 @@
+.faq-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  text-align: center;
+
+  .search {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    .search-input {
+      position: relative;
+      width: 50%;
+      img {
+        position: absolute;
+        top: 50%;
+        margin-left: 12px;
+        transform: translateY(-50%);
+      }
+      input {
+        border: 1px solid var(--pc-200);
+        padding: 16px 12px;
+        border-radius: 12px;
+        width: 100%;
+        &::placeholder {
+          color: var(--pc-500);
+          padding-left: 36px;
+        }
+      }
+    }
+  }
+
+  .populer-questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    p {
+      color: var(--pc-400);
+    }
+
+    .tag {
+      padding: 4px 8px;
+      border-radius: 4px;
+      background: var(--pc-100);
+      color: var(--pc-500);
+    }
+  }
+}
+
+.faq {
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+
+  .category {
+    & > p {
+      color: var(--pc-950);
+      font-weight: var(--fw-medium);
+      margin-bottom: 24px;
+    }
+
+    .category-items {
+      p {
+        padding: 4px 16px;
+        color: var(--pc-500);
+        border-left: 1px solid var(--pc-100);
+
+        &:first-child {
+          color: var(--pc-950);
+          border-left: 1px solid var(--pc-950);
+        }
+      }
+    }
+  }
+
+  .right {
+    flex-basis: 75%;
+
+    .faq--question {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+
+    .active {
+      padding: 16px;
+      background: var(--pc-50);
+      border-radius: 13px;
+      .faq--question {
+        padding: 0;
+      }
+      p {
+        font-weight: var(--fw-bold);
+        color: var(--pc-950);
+      }
+
+      small {
+        font-size: var(--fw-bold);
+        color: var(--pc-950);
+      }
+    }
+  }
+}
+
+.sbuscribe {
+  padding: 40px 2.5%;
+
+  .sbuscribe-bg {
+    padding: 80px 51px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.93) 107.96%
+      ),
+      linear-gradient(360deg, rgba(0, 0, 0, 0) 89.75%, rgba(0, 0, 0, 0.7) 100%),
+      url("/images/ContactForm.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 36px;
+
+    .text {
+      text-align: center;
+      color: white;
+      h2 {
+        margin-bottom: 24px;
+      }
+      p {
+        color: white;
+      }
+    }
+
+    .subscribe-form {
+      display: flex;
+      margin: 0 auto;
+      margin-top: 40px;
+      width: 50%;
+      padding: 8px;
+      background: white;
+      border-radius: 12px;
+      input {
+        width: 100%;
+
+        border: none;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Tablet                                   */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Mobile                                   */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 375px) {
+  .faq-hero {
+    .search {
+      .search-input {
+        width: 100%;
+      }
+    }
+
+    .populer-questions {
+      p {
+        font-size: var(--fs-body-small);
+      }
+
+      .tag {
+        font-size: var(--fs-body-XSmall);
+      }
+    }
+  }
+
+  .faq {
+    .category {
+      display: none;
+    }
+
+    .right {
+      flex-basis: 100%;
+    }
+  }
+
+  .sbuscribe {
+    .sbuscribe-bg {
+      padding: 80px 20px;
+
+      .text {
+        h2 {
+          font-size: 32px;
+          br {
+            display: none;
+          }
+        }
+        p {
+          font-size: var(--fs-body-small);
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .subscribe-form {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+
+        margin-top: 40px;
+
+        background: transparent;
+        input {
+          width: 100%;
+          padding: 12px 16px;
+          border: none;
+          border-radius: 12px;
+        }
+
+        button {
+        }
+      }
+    }
+  }
+}

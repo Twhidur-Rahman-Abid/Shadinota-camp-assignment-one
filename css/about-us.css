@@ -1,0 +1,368 @@
+.about-us-top {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+
+  .about-us--hero {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      width: 520px;
+    }
+  }
+
+  .counter {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    .counter--text-box {
+      & > div {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+        p {
+          font-size: 40px;
+          transform: translateY(-10%);
+        }
+      }
+    }
+  }
+
+  .property {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    & > div,
+    img {
+      min-width: 47.5%;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                loading task                                */
+/* -------------------------------------------------------------------------- */
+.loading-task {
+  text-align: center;
+
+  h5 {
+    margin-bottom: 48px;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 170.42px;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 clinet say                                 */
+/* -------------------------------------------------------------------------- */
+.client-say {
+  background: var(--pc-25);
+
+  .client-say--heading {
+    display: flex;
+    margin-bottom: 56px;
+    justify-content: space-between;
+
+    p {
+      width: 567px;
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 1.5px;
+    background: var(--pc-100);
+    margin-bottom: 56px;
+  }
+
+  .client-say--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      h6 {
+        color: var(--pc-600);
+        font-weight: 400;
+        line-height: 53.44px;
+      }
+
+      p {
+        color: var(--pc-950);
+        font-weight: var(--fw-medium);
+      }
+
+      .lines {
+        display: flex;
+        gap: 8px;
+        div {
+          width: 75px;
+          height: 8px;
+          border-radius: 4px;
+          background: var(--pc-200);
+
+          &:first-child {
+            background: var(--pc-950);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* FAQ start */
+.faq {
+  display: flex;
+  gap: 56px;
+  justify-content: space-between;
+  .left {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      h3 {
+        font-weight: normal;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .right {
+    flex-basis: 60%;
+    .faq--question {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+
+    .active {
+      padding: 16px;
+      background: var(--pc-50);
+      border-radius: 13px;
+      .faq--question {
+        padding: 0;
+      }
+      p {
+        font-weight: var(--fw-bold);
+        color: var(--pc-950);
+      }
+
+      small {
+        font-size: var(--fw-bold);
+        color: var(--pc-950);
+      }
+    }
+  }
+}
+/* FAQ end */
+
+/* -------------------------------------------------------------------------- */
+/*                                   Tablet                                   */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .about-us-top {
+    .about-us--hero {
+      P {
+        width: 451px;
+      }
+    }
+  }
+
+  .property {
+    flex-direction: column;
+  }
+
+  .loading-task {
+    .logos {
+      flex-wrap: wrap;
+      img {
+        width: 111.11px;
+      }
+    }
+  }
+
+  .client-say {
+    .client-say--heading {
+      display: flex;
+      margin-bottom: 56px;
+
+      p {
+        width: 429px;
+      }
+    }
+
+    .client-say--content {
+      .text {
+        flex-basis: 50%;
+        h4 {
+          font-size: 32px;
+        }
+
+        h6 {
+          font-size: 20px;
+          line-height: 32px;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 400;
+        }
+
+        .lines {
+          display: flex;
+          gap: 8px;
+          div {
+            width: 75px;
+            height: 8px;
+            border-radius: 4px;
+            background: var(--pc-200);
+
+            &:first-child {
+              background: var(--pc-950);
+            }
+          }
+        }
+      }
+
+      .client-say--content-img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Mobile start                               */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 375px) {
+  .about-us-top {
+    .about-us--hero {
+      flex-direction: column;
+      gap: 24px;
+
+      P {
+        width: 100%;
+      }
+    }
+
+    .counter {
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      .counter--text-box {
+        div {
+          margin-bottom: 26px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .loading-task {
+    text-align: center;
+
+    .logos {
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+
+  .client-say {
+    .client-say--heading {
+      display: flex;
+      margin-bottom: 56px;
+    }
+
+    .client-say--content {
+      flex-direction: column;
+
+      .text {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h6 {
+          color: var(--pc-600);
+          font-weight: 400;
+          line-height: 53.44px;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 400;
+        }
+
+        .lines {
+          display: flex;
+          gap: 8px;
+          div {
+            width: 75px;
+            height: 8px;
+            border-radius: 4px;
+            background: var(--pc-200);
+
+            &:first-child {
+              background: var(--pc-950);
+            }
+          }
+        }
+      }
+
+      .client-say--content-img {
+        width: 100%;
+      }
+    }
+  }
+
+  .faq {
+    flex-direction: column;
+
+    .left {
+      img {
+        display: none;
+      }
+    }
+
+    .right {
+      .faq--question {
+        align-items: start;
+        gap: 5px;
+      }
+    }
+  }
+}

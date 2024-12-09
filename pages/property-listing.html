@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/property-listing.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav>
+      <a href="/pages/index.html">
+        <img class="logo black-logo" src="/images/logo.svg" alt="" />
+      </a>
+
+      <ul>
+        <li><a href="/pages/index.html">Home</a></li>
+        <li><a href="/pages/about-us.html">About us</a></li>
+        <li>
+          <a class="active-link" href="/pages/property-listing.html"
+            >Property</a
+          >
+        </li>
+        <li><a href="">Agent</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+        <li><a href="/pages/faq.html">FAQ's</a></li>
+      </ul>
+
+      <button class="black-btn">Contact Us</button>
+
+      <!-- movile nev button -->
+      <img class="nav--mobile-btn" src="/images/black-hamburger.svg" alt="" />
+
+      <!-- mobile nav -->
+
+      <div class="nav--mobile">
+        <div>
+          <ul>
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/about-us.html">About us</a></li>
+            <li>
+              <a class="active-link" href="/pages/property-listing.html"
+                >Property</a
+              >
+            </li>
+            <li><a href="">Agent</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+            <li><a href="/pages/faq.html">FAQ's</a></li>
+          </ul>
+
+          <a href="/pages/contact-us.html">
+            <a href="/pages/contact-us.html">
+              <button>Contact Us</button>
+            </a>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <main>
+      <section class="property-heading">
+        <h3>
+          Explore Our <br />
+          Property Listings
+        </h3>
+        <p>
+          Discover our curated selection of properties that cater to various
+          lifestyles and budgets. Whether you’re searching for a modern city
+          apartment, a cozy suburban home, or an investment property, our
+          listings have something for everyone.
+        </p>
+      </section>
+
+      <!-- search start -->
+      <section class="search">
+        <div class="search-input">
+          <img src="/images/search.svg" alt="" />
+          <input type="text" placeholder="Search Your Dream Property" />
+        </div>
+
+        <img class="filter-icon" src="/images/filter.svg" alt="" />
+      </section>
+
+      <!-- main content -->
+      <section class="main-content">
+        <div class="filter">
+          <!-- buttons -->
+          <div class="buttons">
+            <button class="black-btn">Sell</button>
+            <button>Rent</button>
+          </div>
+
+          <!-- filter category -->
+          <div class="checkbox-items">
+            <p class="p-20">Category</p>
+            <div class="checkboxes">
+              <div>
+                <input type="checkbox" name="" id="" />
+                <label class="p-20" for="">House</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" />
+                <label class="p-20" for="">Apartment</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" />
+                <label class="p-20" for="">Villa</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- filter location -->
+          <div class="checkbox-items">
+            <p class="p-20">Location</p>
+            <div class="checkboxes">
+              <div>
+                <input type="checkbox" name="" id="" />
+                <label class="p-20" for="">London</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" />
+                <label class="p-20" for="">Manchester</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" />
+                <label class="p-20" for="">Southampton</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" />
+                <label class="p-20" for="">Chelmsford</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" />
+                <label class="p-20" for="">Liverpool</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- price range -->
+          <div class="price-range">
+            <p class="p-20">Price Range</p>
+
+            <div class="range-slider">
+              <div class="slider">
+                <div class="progess"></div>
+              </div>
+
+              <div class="range-input">
+                <input type="range" class="left" value="500" max="3000" />
+                <input type="range" class="right" value="5600" max="7000" />
+              </div>
+            </div>
+
+            <div class="price-value">
+              <p><span>Min</span> $ 3,000</p>
+              <p><span>Max</span> $ 7,000</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="property-listings-card-box">
+          <div class="card">
+            <div class="img-box">
+              <img src="/images/pl1.png" alt="" />
+
+              <div class="img-btn-box">
+                <button class="black-btn">
+                  <img src="/images/home.svg" alt="" /> House
+                </button>
+                <button class="black-btn">For Sale</button>
+              </div>
+            </div>
+
+            <div class="card-m-box">
+              <div>
+                <h6 class="small-heading">Asri Permata</h6>
+                <p class="p-14">
+                  <img src="/images/location.svg" alt="" />
+                  100 High St, London, W1D 1NR
+                </p>
+              </div>
+
+              <p class="p-20">$1,200</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="card-bottom">
+              <div>
+                <img src="/images/Bathroom.svg" alt="" />
+                <p>2 Bathroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Bedroom Icon.svg" alt="" />
+                <p>3 Bedroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Area.svg" alt="" />
+                1,300 sq ft
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="/images/pl2.png" alt="" />
+
+              <div class="img-btn-box">
+                <button class="black-btn">
+                  <img src="/images/aparment.svg" alt="" /> House
+                </button>
+                <button class="black-btn">Apartment</button>
+              </div>
+            </div>
+
+            <div class="card-m-box">
+              <div>
+                <h6 class="small-heading">Asri Permata</h6>
+                <p class="p-14">
+                  <img src="/images/location.svg" alt="" />
+                  100 High St, London, W1D 1NR
+                </p>
+              </div>
+
+              <div class="price">
+                <p class="p-20">$1,200</p>
+                <p>Per month</p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="card-bottom">
+              <div>
+                <img src="/images/Bathroom.svg" alt="" />
+                <p>2 Bathroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Bedroom Icon.svg" alt="" />
+                <p>3 Bedroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Area.svg" alt="" />
+                1,300 sq ft
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="/images/pl8.png" alt="" />
+
+              <div class="img-btn-box">
+                <button class="black-btn">
+                  <img src="/images/home.svg" alt="" /> House
+                </button>
+                <button class="black-btn">For Sale</button>
+              </div>
+            </div>
+
+            <div class="card-m-box">
+              <div>
+                <h6 class="small-heading">Asri Permata</h6>
+                <p class="p-14">
+                  <img src="/images/location.svg" alt="" />
+                  100 High St, London, W1D 1NR
+                </p>
+              </div>
+
+              <p class="p-20">$1,200</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="card-bottom">
+              <div>
+                <img src="/images/Bathroom.svg" alt="" />
+                <p>2 Bathroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Bedroom Icon.svg" alt="" />
+                <p>3 Bedroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Area.svg" alt="" />
+                1,300 sq ft
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="/images/pl4.png" alt="" />
+
+              <div class="img-btn-box">
+                <button class="black-btn">
+                  <img src="/images/home.svg" alt="" /> House
+                </button>
+                <button class="black-btn">For Sale</button>
+              </div>
+            </div>
+
+            <div class="card-m-box">
+              <div>
+                <h6 class="small-heading">Asri Permata</h6>
+                <p class="p-14">
+                  <img src="/images/location.svg" alt="" />
+                  100 High St, London, W1D 1NR
+                </p>
+              </div>
+
+              <p class="p-20">$1,200</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="card-bottom">
+              <div>
+                <img src="/images/Bathroom.svg" alt="" />
+                <p>2 Bathroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Bedroom Icon.svg" alt="" />
+                <p>3 Bedroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Area.svg" alt="" />
+                1,300 sq ft
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="/images/pl5.png" alt="" />
+
+              <div class="img-btn-box">
+                <button class="black-btn">
+                  <img src="/images/home.svg" alt="" /> House
+                </button>
+                <button class="black-btn">For Sale</button>
+              </div>
+            </div>
+
+            <div class="card-m-box">
+              <div>
+                <h6 class="small-heading">Asri Permata</h6>
+                <p class="p-14">
+                  <img src="/images/location.svg" alt="" />
+                  100 High St, London, W1D 1NR
+                </p>
+              </div>
+
+              <p class="p-20">$1,200</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="card-bottom">
+              <div>
+                <img src="/images/Bathroom.svg" alt="" />
+                <p>2 Bathroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Bedroom Icon.svg" alt="" />
+                <p>3 Bedroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Area.svg" alt="" />
+                1,300 sq ft
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="/images/pl6.png" alt="" />
+
+              <div class="img-btn-box">
+                <button class="black-btn">
+                  <img src="/images/home.svg" alt="" /> House
+                </button>
+                <button class="black-btn">For Sale</button>
+              </div>
+            </div>
+
+            <div class="card-m-box">
+              <div>
+                <h6 class="small-heading">Asri Permata</h6>
+                <p class="p-14">
+                  <img src="/images/location.svg" alt="" />
+                  100 High St, London, W1D 1NR
+                </p>
+              </div>
+
+              <p class="p-20">$1,200</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="card-bottom">
+              <div>
+                <img src="/images/Bathroom.svg" alt="" />
+                <p>2 Bathroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Bedroom Icon.svg" alt="" />
+                <p>3 Bedroom</p>
+              </div>
+
+              <div>
+                <img src="/images/Area.svg" alt="" />
+                1,300 sq ft
+              </div>
+            </div>
+          </div>
+
+          <div class="view-more">
+            <button class="black-btn">View More</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contect form -->
+    <section class="contact">
+      <div class="contact-bg">
+        <!-- left -->
+        <div class="left">
+          <h2>Need a help to find your comfort home?</h2>
+          <p class="p-20">
+            Don’t hesitate to get in touch with us and begin your journey to
+            owning your dream home. We’re here to guide you every step of the
+            way!
+          </p>
+        </div>
+
+        <div class="form">
+          <div>
+            <label for="">Full Name</label>
+          </div>
+          <div>
+            <label for="">Email</label>
+          </div>
+          <div>
+            <label for="">Email</label>
+          </div>
+
+          <textarea name="" id=""></textarea>
+
+          <button class="black-btn">Send</button>
+        </div>
+      </div>
+    </section>
+    <!-- Contect form -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="f-text-boxes">
+        <div class="f-box-1">
+          <h6>
+            We are an experienced real estate <br />
+            agency based in United Kingdom
+          </h6>
+
+          <div class="f-inner-boxes">
+            <div>
+              <p>General Enquiries</p>
+              <p>info@example.com</p>
+            </div>
+            <div>
+              <p>Phone</p>
+              <p>+1 555-0123-456</p>
+            </div>
+            <div>
+              <p>Office</p>
+              <p>789 Elm Street, Springfield, Illinois 62704</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="f--box-2">
+          <div class="f--left-menu">
+            <p>Navigation</p>
+
+            <div>
+              <div>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Listing Product</p>
+              </div>
+              <div>
+                <p>FAQ's</p>
+                <p>Blog</p>
+                <p>Agent</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="f--menu">
+            <p class="f-menu-title">Follow Us</p>
+
+            <div>
+              <p>Facebook</p>
+              <p>Instagram</p>
+              <p>Twitter</p>
+              <p>Behance</p>
+              <p>Dribbble</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="copy-write">
+        <img src="/images/logo.svg" alt="" />
+        <p>© 2023-2024, All Rights Reserved</p>
+        <p>Back to top ⬆</p>
+      </div>
+    </footer>
+
+    <!-- add js file -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>
