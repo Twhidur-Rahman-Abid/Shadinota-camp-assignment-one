@@ -184,6 +184,7 @@ nav {
 
   .logo {
     z-index: 100;
+    line-height: 0;
   }
 
   ul {
