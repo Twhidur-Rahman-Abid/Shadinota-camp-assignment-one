@@ -255,7 +255,7 @@
 /*                                   Mobile                                   */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 375px) {
+@media (max-width: 575px) {
   .blog-top {
     .bolg-heading {
       flex-direction: column;
